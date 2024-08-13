@@ -96,15 +96,16 @@ class _NameState extends State<Name> {
             itemBuilder: (context, index) {
               return Column(
                 children: [
+                  20.height,
                   Text(snapshot.data!.data.date.gregorian.date,
                       style: theme.textTheme.bodyLarge),
                   Text(snapshot.data!.data.date.gregorian.month.en,
                       style: theme.textTheme.bodyLarge),
                   Text(snapshot.data!.data.date.hijri.date,
                       style: theme.textTheme.bodyLarge),
-                  Text(snapshot.data!.data.date.hijri.month.ar,
+                  Text(snapshot.data!.data.date.hijri.month.en,
                       style: theme.textTheme.bodyLarge),
-                  Text(snapshot.data!.data.date.hijri.weekday.ar,
+                  Text(snapshot.data!.data.date.hijri.weekday.en,
                       style: theme.textTheme.bodyLarge),
                   Text(snapshot.data!.data.date.hijri.year,
                       style: theme.textTheme.bodyLarge),
